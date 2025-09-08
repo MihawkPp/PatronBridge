@@ -10,12 +10,12 @@ package Observers;
  */
 public class HeatDisplay implements Observer, Display {
 
-    private double temperatura;
+    private double temperature;
     private double humidity;
     private double heat;
     
     @Override
-    public void update(double temperatura, double humidity, double pressure, double heat) {
+    public void update(double temperature, double humidity, double pressure, double heat) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

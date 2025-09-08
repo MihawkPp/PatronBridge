@@ -10,19 +10,24 @@ package Observers;
  */
 public class CurrentConditions implements Observer, Display{
 
-    private double temperatura;
+    private double temperature;
     private double humidity;
     private double pressure;
     
     
     @Override
-    public void update(double temperatura, double humidity, double pressure, double heat) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void update(double temperature, double humidity, double pressure, double heat) {
+        this.temperature = temperature;
+        this.humidity = humidity;
+        this.pressure = pressure;
     }
 
     @Override
     public void display() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        System.out.println(".: Current Conditions:." +
+                        "Current temperature :" + temperature + "C°" +
+                        "Current humidity: " + humidity + "g/m^3" +
+                        "Current pressure: " + pressure + "Pa");
     }
     
 }

@@ -9,5 +9,5 @@ package Observers;
  * @author Estudiantes
  */
 public interface Observer {
-    public void update(double temperatura, double humidity, double pressure, double heat);
+    public void update(double temperature, double humidity, double pressure, double heat);
 }
